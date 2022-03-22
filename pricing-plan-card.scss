@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+$g-body-background-color: #fff;
+$g-text-color: #656C7C;
+$g-font-family: Inter, sans-serif;
+$g-font-size: 1rem;
+$g-font-style: normal;
+$g-line-height: 1.5; 
+$medium: 768px;
+
+body {
+  background-color: $g-body-background-color;
+  color: $g-text-color;
+  font-family: $g-font-family;
+  font-size: $g-font-size;
+  line-height: $g-line-height;
+}
+
+.container{
+    padding: 97px 156px;
+    font-family: $g-font-family;
+    font-style: $g-font-style;
+
+    .pricing-plan-heading {
+        text-align: center;
+        margin-bottom: 72px;
+        h4{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #000000;
+            margin-bottom: 16px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #656C7C;
+        }
+    }
+    .pricing-plan-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+
+        .pricing-plan-card-item {
+            border: 1px solid #E6E6E6;
+            border-radius: 16px;
+            padding: 38px 24px 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 683px;
+
+            .pricing-plan-card-item-header {
+                margin-bottom: 32px;
+                .pricing-plan-card-item-header-info {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #656C7C;
+                }
+            }
+            .pricing-plan-card-item-button {
+                border-radius: 8px;
+                width: 100%;
+                padding: 15px 0px;
+                text-align: center;
+                &:hover {
+                    background-color:#EA4C89;
+                    border: 1px solid #E6E6E6;
+                    span {
+                        color: #fff;
+                    }
+                }
+                span {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #EA4C89;
+                }
+            }
+            .pricing-plan-price{
+                .amount {
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: #000000;
+                }
+                .time {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #656C7C;
+                }
+            }
+            .pricing-plan-list{
+                .pricing-plan-list-item {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                    .support {
+                        width: 16px;
+                        height: 13px;
+                    }
+                    .unsupport {
+                        width: 13px;
+                        height: 13px;
+                    }
+                    p{
+                        margin-left: 20px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    .support-info {
+                        color: #000000;
+                    }
+                    .unsupport-info {
+                        color: #B1B8C9;
+                    }
+                    
+                }
+            }
+        }
+        .free{
+            background: #FFFFFF;
+            .pricing-plan-card-item-header-top {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 30px;
+                p{
+                    margin-left: 13px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+            .pricing-plan-card-item-button {
+                background: #FFECF0;
+            }
+        }
+        .pro{
+            background: #FFFFFF;
+            box-shadow: 0px 14px 30px rgba(204, 204, 204, 0.32);
+
+            .pricing-plan-card-item-header-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+                p{
+                    margin-left: 13px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+                .pricing-plan-card-item-header-top-icon-heading {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+            }
+            .pricing-plan-best-value-button {
+                padding: 10px 18px;
+                border-radius: 40px;
+                background: #FDB72E;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .pricing-plan-card-item-button {
+                background: #FFECF0;
+            }
+        }
+        .enterprise{
+            background-color: #1769FF;
+            color:#fff;
+            .pricing-plan-card-item-header-top {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 30px;
+                p{
+                    margin-left: 13px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+            .pricing-plan-card-item-header-info{
+                color: #fff !important;
+            }
+            .pricing-plan-card-item-list{
+                .lets-talk{
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+            }
+            .pricing-plan-card-item-button {
+                background: #FFF;
+                &:hover {
+                    background-color:transparent;
+                    border: 1px solid #E6E6E6;
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+@media screen and (max-width: $medium) {
+    .container {
+        padding: 45px 15px;
+        .pricing-plan-card {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 24px;
+    
+        }
+    }
+
+    
+}
