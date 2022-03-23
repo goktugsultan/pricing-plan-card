@@ -88,6 +88,7 @@ body {
   width: 100%;
   padding: 15px 0px;
   text-align: center;
+  cursor: pointer;
 }
 
 .container .pricing-plan-card .pricing-plan-card-item .pricing-plan-card-item-button:hover {
@@ -234,6 +235,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
+  cursor: pointer;
 }
 
 .container .pricing-plan-card .pro .pricing-plan-card-item-button {

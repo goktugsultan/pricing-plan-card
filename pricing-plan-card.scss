@@ -80,6 +80,7 @@ body {
                 width: 100%;
                 padding: 15px 0px;
                 text-align: center;
+                cursor: pointer;
                 &:hover {
                     background-color:#EA4C89;
                     border: 1px solid #E6E6E6;
@@ -187,6 +188,7 @@ body {
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 19px;
+                cursor: pointer;
             }
             .pricing-plan-card-item-button {
                 background: #FFECF0;
