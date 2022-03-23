@@ -7,6 +7,18 @@ $g-font-size: 1rem;
 $g-font-style: normal;
 $g-line-height: 1.5; 
 $medium: 768px;
+$large:1024px;
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: Inter, sans-serif;
+}
 
 body {
   background-color: $g-body-background-color;
@@ -230,6 +242,14 @@ body {
             grid-gap: 24px;
     
         }
+    }
+
+    
+}
+
+@media screen and (min-width: $large) {
+    .container {
+        padding: 97px 86px;
     }
 
     
